@@ -15,7 +15,7 @@ public class OrderController {
     }
 
     @GetMapping("/add")
-    public void addItems(@RequestParam List<Integer> idsToAdd){
+    public void addItems(@RequestParam ("id") List<Integer> idsToAdd){
         this.orderService.addToCart(idsToAdd);
     }
 
